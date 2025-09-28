@@ -1,50 +1,135 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mp3 Oynatıcı Örneği</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutulmayagör: Cahit Sıtkı’nın Dizesinde Bir Kelimenin Yakıcı Gücü</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      padding: 40px;
-      background-color: #f0f0f0;
-      text-align: center;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 { color: #2c3e50; text-align: center; }
+    .highlight-pink {
+      background-color: #ffe6e6;
+      padding: 15px;
+      border-left: 5px solid #e91e63;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    .highlight-blue {
+      background-color: #e6f3ff;
+      padding: 15px;
+      border-left: 5px solid #2196f3;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    .highlight-yellow {
+      background-color: #fffde7;
+      padding: 15px;
+      border-left: 5px solid #ffca28;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    p { margin-bottom: 15px; }
+    blockquote {
+      font-style: italic;
+      color: #555;
+      border-left: 3px solid #ccc;
+      padding-left: 10px;
+      margin: 15px 0;
     }
     button {
-      padding: 12px 24px;
-      font-size: 18px;
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
       cursor: pointer;
-      background-color: #2c3e50;
-      color: white;
+      background: #2c3e50;
+      color: #fff;
       border: none;
       border-radius: 6px;
-      margin-bottom: 20px;
     }
-    button:hover {
-      background-color: #1a252f;
-    }
+    button:hover { background: #1a252f; }
   </style>
 </head>
 <body>
 
-  <h1>Mp3 Oynatıcı</h1>
-
+  <!-- Müziği kontrol eden buton -->
   <button id="playBtn">🔊 Müziği Aç</button>
 
+  <!-- Google Drive müzik dosyası -->
   <audio id="bgm" src="https://drive.google.com/uc?export=download&id=1k4wIgQrmiNVB-qVivvXz429353tGrx_W" loop></audio>
+
+  <div class="container">
+    <h1>“Tutulmayagör”: Cahit Sıtkı’nın Dizesinde Bir Kelimenin Yakıcı Gücü</h1>
+
+    <div class="highlight-pink">
+      <blockquote>
+        “Bir kere sevdaya tutulmayagör;<br>
+        Ateşlere yandığının resmidir.”
+      </blockquote>
+    </div>
+
+    <p>Yüzeyde bakıldığında, bu dizeyi çevirmek zor değildir: “Sevdaya tutulduğun zaman, ateşlerde yanarsın.” Fakat işin derininde bir kelime vardır ki başka dile kolay kolay sığmaz: “tutulmayagör.”</p>
+
+    <div class="highlight-blue">
+      <p>“Tutulmak” kelimesi, Türkçede sadece fizyolojik ya da gündelik bir eylem değildir. Bir hastalığa tutulmak, bir felce tutulmak, bir büyüye tutulmak… Hepsinde pasiflik, çaresizlik ve iradeyi aşan bir yakalanma hali vardır. Kelimenin kökü olan “tut-”, aktif bir sahiplenmeyi, güçlü bir kavrayışı çağrıştırırken, edilgen biçimi olan “-ulmak” eklenince kaderin eline düşmüşlük, çaresiz bir yakalanma hissi doğar.</p>
+      <p>Buradaki “tutulmayagör” ise, Türkçede az rastlanan bir ifade biçimi: Hem “sakın tutulma” uyarısı içerir, hem de “bir kez yakalandın mı kurtuluşun yok” tehdidini. Yani kelimenin yapısı, hem ihtimali hem de kesinliği aynı anda dile getirir. Bu yüzden “fall in love” ya da “fall for someone” gibi İngilizce karşılıklar, tutkuya düşmeyi aktarabilir ama bu edilgen, neredeyse hastalık gibi yakalayan yazgısallığı taşıyamaz.</p>
+    </div>
+
+    <div class="highlight-yellow">
+      <p>Tam bu noktada Yahya Kemal’in bir röportajında anlattığı anekdot meseleyi berraklaştırır:</p>
+      <blockquote>
+        “İngilizler Vuslat şiirimi İngilizceye tercüme etti. Fakat ismine karşılık bulamadılar. Bana mektup yazdılar. Cevap olarak dedim ki, madem ki sizde bunun ne mefhumu ne kelimesi var, Vuslat’ı aynen İngiliz lisanına kabul edin ve İngilizceye uygun yazın. Bizim ‘flört’ kelimesini kabul etmemiz gibi. Daha doğrusu Fransızların kabul ettiği gibi. Öyle değil mi? Flört’ün hem kavramı hem kelimesi bütün diller İngilizlerden almıştır.”
+      </blockquote>
+      <p>Bu sözler, bazı kelimelerin yalnızca anlam değil, bir kültürün duyuş biçimini taşıdığını gösterir. “Vuslat” nasıl Türkçenin içsel bir kavramıysa, “tutulmayagör” de öyledir. Bu tür kelimeler, çevrildiklerinde yalnızca gölgelerini bırakır, asıl titreşimlerini yitirirler.</p>
+    </div>
+
+    <p>Dizede geçen “Ateşlere yandığının resmidir” ifadesi, sıradan bir yanmayı değil, gözle görülür, kanıtlanır bir yanışı dile getirir. Burada “ateş” metaforu klasik aşk şiirlerinden mirastır; ama “resim” sözcüğü, modern dünyanın kanıt ve kayıt diliyle buluşur. Böylece dize, hem geleneğe hem modernliğe yaslanır.</p>
+
+    <div class="highlight-pink">
+      <p>Öncesinde gelen “tutulmayagör” ise dizenin asıl damarını oluşturur. Çünkü aşk burada bir tercih değil, bir “yakalanma”dır. Tıpkı bir hastalık gibi. Tutulmak fiilinin çağrışımıyla sevmek, artık iradeli bir karar değil, kişinin elinden alınmış bir yazgıdır. İşte bu yüzden dizeyi “Sevdaya tutulduğunda yanarsın” diye çevirmek, Türkçenin verdiği çaresizlik ve kader duygusunu tam olarak taşıyamaz.</p>
+    </div>
+
+    <div class="highlight-blue">
+      <p>Çeviri çoğu zaman kelimenin “anlam çekirdeğini” yakalar, fakat “duygusal kabuğunu” düşürür. Tutulmayagör işte bu kabuktur: Türkçede içimizi sızlatan, bizi bir hastalık gibi kuşatan o mecburiyeti taşır. Oysa başka bir dilde <em>fall in love</em> dendiğinde, düşme eylemi bir seçim ya da hafif romantikleştirilmiş bir serüven gibi duyulur. Tarancı’nın dizesinde ise düşmek yoktur; tutulmak vardır. Elini kolunu bağlayan, kaçışı olmayan bir yazgı.</p>
+      <p>Belki de bu yüzden bu dizeyi okurken yalnızca aşkı değil, aşkın insana dışarıdan bulaşan bir kader gibi gelişini hissederiz. Tutulmayagör kelimesi, aşk karşısında iradesiz kalışımızın edebi kaydıdır.</p>
+      <p>Ve biz okurlar da fark ederiz: Türkçede bazen tek bir kelime, bütün bir şiirin ruhunu taşır. Tutulmayagör, çeviriye direnen o kelimelerdendir; bir dilin içindeki kader duygusunu tek başına sırtlanan bir sözcük.</p>
+    </div>
+  </div>
 
   <script>
     const btn = document.getElementById('playBtn');
     const audio = document.getElementById('bgm');
+    let playing = false;
 
     btn.addEventListener('click', () => {
-      audio.play().then(() => {
-        btn.style.display = 'none';
-      }).catch(err => {
-        console.error('Müzik çalınamadı:', err);
-        alert('Müzik çalınamadı. Lütfen sayfayı yenileyip tekrar deneyin.');
-      });
+      if (!playing) {
+        audio.play().then(() => {
+          btn.textContent = "🔇 Müziği Kapat";
+          playing = true;
+        }).catch(err => {
+          console.error('Müzik çalınamadı:', err);
+          alert('Müzik çalınamadı. Lütfen sayfayı yenileyip tekrar deneyin.');
+        });
+      } else {
+        audio.pause();
+        btn.textContent = "🔊 Müziği Aç";
+        playing = false;
+      }
     });
   </script>
 
