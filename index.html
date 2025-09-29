@@ -79,7 +79,7 @@
   <button id="playBtn">🔊 Müziği Aç</button>
 
   <!-- mp3 müzik dosyası -->
-  <audio id="bgm" src="kara_sevda.mp3" loop></audio>
+  <audio id="bgm" src="kara_sevda.mp3"></audio>
 
   <div class="container">
     <h1>“Tutulmayagör”: Cahit Sıtkı’nın Dizesinde Bir Kelimenin Yakıcı Gücü</h1>
@@ -144,6 +144,8 @@
 
     btn.addEventListener('click', () => {
       if (!playing) {
+        audio.pause();
+        audio.currentTime = 0;
         audio.play().then(() => {
           btn.textContent = "🔇 Müziği Kapat";
           playing = true;
